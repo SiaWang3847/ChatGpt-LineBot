@@ -1,5 +1,7 @@
 import os
+from dotenv import load_dotenv
 
+load_dotenv()
 chat_language = os.getenv("INIT_LANGUAGE", default="zh")
 
 MSG_LIST_LIMIT = int(os.getenv("MSG_LIST_LIMIT", default=20))
